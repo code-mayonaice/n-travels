@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+}
+
+* ,*::before, *::before{
+    box-sizing: border-box;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding-top: 15px;
+}
+.headings{
+    width:100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.logo img{
+    border-radius: 50%;
+    width: 90px;
+    height: 80px;
+}
+
+.menulist{
+    display: none;
+}
+
+.menulist img{
+    width: 30px;
+    height: 25px;
+}
+.webname span{
+    color: rgb(3, 54, 71);
+    font-style: oblique;
+}
+.webname h1{
+   text-transform: capitalize;
+   color: rgb(10, 10, 10);
+   padding: 10px;
+}
+
+.tagline p{
+    color: rgb(88, 100, 100);
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.navigation ul:first-child{
+    border-bottom: 1px solid #999;
+}
+
+.navigation .first{
+    border-bottom: 1px solid #999;
+    color: grey;
+}
+
+.navigation ul{
+    display: inline-flex;
+    list-style:none;
+    padding: 15px;
+
+}
+.navigation li{
+    padding-left: 25px;
+    text-transform: capitalize;
+}
+.navigation a{
+    color: rgb(13, 128, 156);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+.navigation a:hover{
+   border-bottom: 1px solid #999;
+   color: grey;
+}
+.social-links{
+    padding-top: 10px;
+    justify-content:space-around ;
+    width: 230px;
+    display: flex;
+    cursor: pointer;
+}
+.social-links img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: space-between;
+}
+
+.main-body{
+    width: 100%;
+    height: 90vh;
+    background-image: url(Beach-Resort-Wallpaper-47-2560x1600.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.background{
+    width: 100%;
+    height: 90vh;
+    background-color: rgb(124, 119, 119);
+    opacity: 0.5;
+    position: absolute;
+}
+
+.content{
+    position: relative;
+}
+.content h1{
+ text-align: center;
+ text-transform: capitalize;
+ color: rgb(235, 228, 228);
+ font-size: 2em;
+
+}
+.content span{
+    color: rgb(3, 54, 71);
+}
+.content p{
+  text-align: center;
+  font-style: oblique;
+  font-weight: bold;
+  color: rgb(232, 235, 240);
+  font-size: 25px;
+}
+
+.content p span{
+      color: rgb(3, 54, 71);
+}
+
+.sgn{
+    position: relative;
+    margin-top: 10px;
+}
+
+.sgn button,.image-section button{
+    padding: 8px;
+    width: 130px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(3, 54, 71);
+    color: azure;
+    cursor: pointer;
+    transition:  0.7s transform;
+}
+.sgn button:hover,.image-section button:hover{
+    background-color: rgb(1, 35, 41);
+    transform: scale(0.9);
+}
+
+.line-divider{
+    width: 100%;
+    height: 0.7px;
+    background-color: rgb(107, 105, 105);
+    margin: auto;
+    position: absolute;
+    top: -6%;
+}
+.abouts-section{
+    width: 65%;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 4em;
+    text-align: center;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.abouts-section::before{
+    border-top: 2px solid #999;
+}
+.abouts-section .title{
+  text-transform: capitalize;
+  color: rgb(42, 136, 180);
+}
+
+.text-content img{
+    width: 40px;
+    height: 35px;
+    position: absolute;
+}
+
+.text-content p{
+    font-weight: bold;
+    color: rgb(4, 47, 61);
+}
+
+.icons-container{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    grid-template-rows: 290px;
+    grid-gap: 10px;
+    justify-content: center;
+    margin-top: 160px;
+    position: relative;
+    font-family: 'Comfortaa', cursive;
+}
+.as{
+    text-align: center;
+}
+.as img{
+    width: 180px;
+    height: 160px;
+    border-radius: 50%;
+}
+
+
+.bigline{
+    width: 90%;
+    height: 200px;
+    background-image: linear-gradient(90deg, rgb(140, 201, 196),rgb(96, 187, 160));
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    position: absolute;
+    top: -35%;
+    left: 5%;
+    z-index: -1;
+}
+
+.image-section{
+    width: 90%;
+    height: 1660px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 390px 390px 390px 390px;
+    grid-row-gap: 30px;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(224, 235, 238);
+    position: relative;
+    border-radius: 10px;
+    border-top: 1px solid rgb(197, 195, 193);
+    border-left: 1px solid rgb(158, 166, 167);
+    box-shadow: 2px 2px 2px #999;
+    font-family: 'Comfortaa', cursive;
+}
+
+.img-section img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 2px 1px #999;
+}
+
+.img-left {
+    margin-left: -20px;
+}
+
+.img-right {
+    margin-right: -20px;
+}
+
+
+.review-section{
+    width: 100%;
+    height: 500px;
+    position: relative; 
+    background-image: linear-gradient(90deg, rgb(195, 211, 210),rgb(134, 155, 149));
+    margin: auto;
+    margin-top: 30px;
+    border: 1px solid rgba(148, 183, 204, 0.596);
+    box-shadow: 6px 6px 6px rgb(166, 170, 170);
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.opacity-color{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 146, 146, 0.219);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.review h1{
+    text-align: center;
+    color: rgb(223, 215, 215);
+    text-transform: capitalize;
+}
+
+.review-body{
+    width: 80%;
+    height: 80%;
+    margin: auto;  
+    
+}
+
+.review-body h3{
+    color: aliceblue;
+    padding: 10px 0px 0px 10px;
+    margin-bottom: 10px;
+}
+
+.review-body textarea {
+    width: 80%;
+    height: 25%;
+    min-height: 13%;
+    max-height: 50%;
+    min-width: 13%;
+    max-width: 80%;
+    margin-left: 10%;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: rgb(70, 65, 65);
+}
+
+textarea::placeholder{
+    font-size: 15PX;
+    color: rgb(131, 133, 132);
+}
+.review-body img{
+    width: 35px;
+    height: 30px;
+    position: absolute;
+}
+
+.allign{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+
+.allign input{
+    margin-left: 70px;
+    width: 350px;
+    padding: 7px;
+    outline: none;
+    border: 1.5px solid #999;
+}
+
+.allign button{
+  position: absolute;
+  bottom: 18%;
+  left: 28%;
+  border: none;
+  outline:none;
+  border-radius: 10px;
+  padding: 5px;
+  color: rgb(59, 57, 57);
+  font-weight: 700;
+}
+.footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(2, 12, 12);
+    margin-top: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-family: 'Rubik', sans-serif;
+}
+
+.phase1{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+span{
+    font-size: 30px;
+}
+.slim-line{
+    width: 80%;
+    height: 1px;
+    background-color: rgb(184, 190, 190);
+    margin:10px auto;
+}
+
+.icons-footer img{
+    width: 50px;
+    height: 45px;
+    border: 1px solid rgb(117, 115, 115);
+    border-radius: 50%;
+    padding: 3px;
+}
+.icons-footer{
+    text-align: center;
+}
+.icon{
+ margin: 3px;
+}
+.icons-footer h2{
+    color: rgb(138, 133, 133);
+}
+
+
